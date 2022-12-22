@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ">Navbar</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <h1 class=" my-1 mx-4">Clock</h1>
+    <div class="card w-50 my-4 mx-4">
+        <div class="card-body">
+            <h5>Time</h5>
+            <p>Current Time is:</p>
+            <p><span id="Time">
+                </span></p>
+            <button class="btn btn-primary" onclick="clicked() ">Click</button>
+        </div>
+    </div>
+
+    <h1 class=" my-1 mx-4">To-Do-List</h1>
+
+    <div class="form-group my-4 mx-4">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">Add an item to the list</small>
+    </div>
+
+    <div class="form-group my-4 mx-4">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" rows="3"></textarea>
+    </div>
+
+
+    <button type="submit" id="add" class="btn btn-primary my-4 mx-4">Add to list</button>
+    <button id="clear" class="btn btn-primary" onclick="clearStorage()">Clear list</button>
+
+    <h3 class=" my-1 mx-4">ITEMS</h3>
+    <table class="table  my-4 mx-4">
+        <thead>
+            <tr>
+                <th scope="col">Sno.</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <th scope="row">1</th>
+                <td>Go to Gym</td>
+                <td>Be Healthy </td>
+                <td><button class="btn btn-sm btn-primary">Delete</button></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
