@@ -74,6 +74,7 @@ function deleted(itemIndex) {
     update();
 
 }
+
 function clearStorage() {
     if (confirm("Do you areally want to clear?")) {
         console.log('Clearing the storage')
